@@ -13,4 +13,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Changelog
-        uses: vlachdev/workflows/changelog@v1
+        uses: vlachdev/workflows/changelog@v2

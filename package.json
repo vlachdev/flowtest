@@ -23,23 +23,12 @@
   },
   "release": {
     "preset": "conventionalcommits",
+    "presetConfig": {
+        "types": [{ "type": "feat", "section": "🚀 Features" }]
+     },
     "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "presetConfig": {
-            "types": [{ "type": "feat", "section": "🚀 Features" }]
-          }
-        }
-      ],
-      [
-        "@semantic-release/release-notes-generator",
-        {
-          "presetConfig": {
-            "types": [{ "type": "feat", "section": "🚀 Features" }]
-          }
-        }
-      ],
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
       "@semantic-release/github"
     ]
   }

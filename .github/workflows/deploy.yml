@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "14"
       - name: NPM
-        run: npm ci
+        run: npm i
       - name: Semantic Release
         run: npx semantic-release
         env:

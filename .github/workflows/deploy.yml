@@ -10,19 +10,9 @@ jobs:
   create-changelog:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Create changelog text
-        id: changelog
-        uses: loopwerk/tag-changelog@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          exclude_types: other,doc,chore
-      - name: Create release
-        uses: actions/create-release@latest
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v1.0.${{ github.RUN_NUMBER }}
-          release_name: v1.0.${{ github.RUN_NUMBER }}
-          body: ${{ steps.changelog.outputs.changes }}

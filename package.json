@@ -25,6 +25,7 @@
       [
         "@semantic-release/commit-analyzer",
         {
+          "preset": "conventionalcommits",
           "presetConfig": {
             "types": [{ "type": "feat", "section": "🚀 Features" }]
           }

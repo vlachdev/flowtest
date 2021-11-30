@@ -17,8 +17,9 @@
     "url": "https://github.com/cipami/flowtest/issues"
   },
   "homepage": "https://github.com/cipami/flowtest#readme",
-  "devDependencies": {
+  "dependencies": {
     "semantic-release": "^18.0.1"
+    "conventional-changelog-conventionalcommits": "latest"
   },
   "release": {
     "preset": "conventionalcommits",

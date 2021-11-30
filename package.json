@@ -30,7 +30,14 @@
           }
         }
       ],
-      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "presetConfig": {
+            "types": [{ "type": "feat", "section": "🚀 Features" }]
+          }
+        }
+      ],
       "@semantic-release/github"
     ]
   }

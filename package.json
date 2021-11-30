@@ -21,12 +21,11 @@
     "semantic-release": "^18.0.1"
   },
   "release": {
+    "preset": "conventionalcommits",
     "plugins": [
-      "@semantic-release/conventional-changelog-conventionalcommits",
       [
         "@semantic-release/commit-analyzer",
         {
-          "preset": "conventionalcommits",
           "presetConfig": {
             "types": [{ "type": "feat", "section": "🚀 Features" }]
           }

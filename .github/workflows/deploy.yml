@@ -13,6 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Changelog
-        uses: vlachdev/workflows/changelog@v8
+        uses: vlachdev/workflows/changelog@v9
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
